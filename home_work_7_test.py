@@ -30,7 +30,7 @@ def test_read_csv():
 # проверка xlsx файла
 def test_read_xlsx():
     with (zipfile.ZipFile('resources/file.zip', 'r') as file_zip):
-        with file_zip.open('x.xlsx') as xls_file:
+        with file_zip.open('sample3.xlsx') as xls_file:
             workbook = load_workbook(filename=xls_file)
             sheet = workbook.active
             sheet_names = workbook.sheetnames
